@@ -42,6 +42,8 @@ dim(MergedData)
 Data <- MergedData[,Columns]
 dim(Data)
 
+##Part 3 - Uses descriptive activity names to name the activities in the data set
+
 Data$Activity <- as.character(Data$Activity)
 for (i in 1:6){
 Data$Activity[Data$Activity == i] <- as.character(activityLabels[i,2])
@@ -49,7 +51,7 @@ Data$Activity[Data$Activity == i] <- as.character(activityLabels[i,2])
 
 Data$Activity <- as.factor(Data$Activity)
 
-##Appropriately labels the data set with descriptive variable names
+##Part 4 - Appropriately labels the data set with descriptive variable names
 
 names(Data)<-gsub("BodyBody", "Body", names(Data))
 names(Data)<-gsub("Acc", "Accelerometer", names(Data))
@@ -63,6 +65,8 @@ names(Data)<-gsub("-mean()", "Mean", names(Data), ignore.case = TRUE)
 names(Data)<-gsub("-std()", "STD", names(Data), ignore.case = TRUE)
 names(Data)<-gsub("-freq()", "Frequency", names(Data), ignore.case = TRUE)
 names(Data)<-gsub("angle", "Angle", names(Data))
+
+##Part 5 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
 Data$Subject <- as.factor(Data$Subject)
 Data <- data.table(Data)
