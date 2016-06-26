@@ -48,6 +48,8 @@ Data$Activity[Data$Activity == i] <- as.character(activityLabels[i,2])
 Data$Activity <- as.factor(Data$Activity)
 
 ##Appropriately labels the data set with descriptive variable names
+names(extractedData)
+
 names(extractedData)<-gsub("BodyBody", "Body", names(extractedData))
 names(extractedData)<-gsub("Acc", "Accelerometer", names(extractedData))
 names(extractedData)<-gsub("gravity", "Gravity", names(extractedData))
