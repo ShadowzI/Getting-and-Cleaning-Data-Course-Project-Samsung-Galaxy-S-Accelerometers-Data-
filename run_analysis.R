@@ -1,6 +1,10 @@
 ##The code should have a file run_analysis.R in the main directory that can be run as long as the Samsung data is in your working directory.
 ##If the file is not present the data should be downloaded from here https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and extracted into the working directory
 
+if (!require("data.table")) {
+  install.packages("data.table")
+}
+
 library(data.table)
 
 ## STEP 1: Merges the training and the test sets to create one data set
