@@ -19,7 +19,7 @@ You should create one R script called run_analysis.R that does the following.
 
 ##Initial
 1. Download the zip file from [this URL](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
-2. Unzip the file into the working directory. Your working directory should have a file named '''UCI HAR Dataset'''
+2. Unzip the file into the working directory. Your working directory should have a file named ```UCI HAR Dataset```
 
 #Dependencies
-'''run_analysis.R''' depends on '''data.table'''. The file is coded to automatically install it at start.
+```run_analysis.R``` depends on ```data.table```. The file is coded to automatically install it at start.
