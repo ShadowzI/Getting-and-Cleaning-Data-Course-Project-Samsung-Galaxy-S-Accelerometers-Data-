@@ -85,6 +85,7 @@ The set of variables that were estimated from these signals are:
     std(): Standard deviation
     
 Subject: The id pertaining to the 1 of the 30 participant in the experiment
+
 Activity: The name of the activity that the measurment correspond to described in the Descprition of the Data
 
 ##Notes: 
